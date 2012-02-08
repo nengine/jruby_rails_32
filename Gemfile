@@ -9,6 +9,7 @@ gem 'activerecord-jdbcsqlite3-adapter'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 gem 'jruby-openssl'
+gem 'bootstrap-sass', '~> 2.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.

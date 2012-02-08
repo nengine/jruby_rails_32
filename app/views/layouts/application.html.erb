@@ -10,24 +10,53 @@
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
+    <style type="text/css">
+          body {
+              padding-top: 60px;
+          }
+
+          a {
+            color: #0088cc;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #005580;
+            text-decoration: underline;
+          }
+
+      </style>
   </head>
-  <body class="<%= params[:controller] %>">
-    <div id="container" class="container">
-      <header>
-        <nav>
-          <ul class="hmenu">
-            <%= render 'shared/navigation' %>
-          </ul>
-        </nav>
-        <%- flash.each do |name, msg| -%>
-          <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-        <%- end -%>
-      </header>
-      <div id="main" role="main">
-        <%= yield %>
+
+
+
+  <body>
+  <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="<%= root_path %>">AI</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <%=  render 'devise/menu/login_items' %>
+                <%=  render 'devise/menu/registration_items' %>
+
+              </ul>
+              <%=  render 'devise/menu/logout' %>
+
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
       </div>
-      <footer>
-      </footer>
-    </div> <!--! end of #container -->
+
+      <div class="container">
+
+        <%= yield %>
+
+      </div> <!-- /container -->
   </body>
 </html>

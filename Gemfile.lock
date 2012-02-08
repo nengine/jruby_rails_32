@@ -208,6 +208,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
+  bootstrap-sass (~> 2.0.0)
   capybara (>= 1.1.2)
   coffee-rails (~> 3.2.1)
   cucumber-rails (>= 1.2.1)

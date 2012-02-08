@@ -6,7 +6,11 @@ Ai::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :users
-  resources :users, :only => :show
+  resources :users, :only => [:show, :update, :edit] do
+    member do
+      get :change_password
+    end
+  end
 
   get "home/index"
 

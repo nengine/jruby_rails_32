@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+    <li>
+      <%= link_to('Home', root_path)  %>
+    </li>
+
+    <li>
+      <%= link_to('Admin', rails_admin_path) %>
+    </li>
+    <li class="dropdown" data-dropdown="dropdown" >
+      <a href="#" class="dropdown-toggle">Account</a>
+      <ul class="dropdown-menu">
+        <li><%= link_to('Profile', edit_user_registration_path) %></li>
+        <li><%= link_to('Password', change_password_user_path(current_user)) %></li>
+        <li class="divider"></li>
+        <li><a href="#">Another link</a></li>
+      </ul>
+    </li>
+
+<% else %>
+    <li>
+      <%= link_to('Login', new_user_session_path)  %>
+    </li>
+<% end %>
