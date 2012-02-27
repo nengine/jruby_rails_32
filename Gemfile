@@ -7,6 +7,7 @@ gem 'rails', '3.2.1'
 
 gem 'activerecord-jdbcsqlite3-adapter'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'cancan'
 
 gem 'jruby-openssl'
 gem 'bootstrap-sass', '~> 2.0.0'
