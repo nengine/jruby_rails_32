@@ -15,3 +15,4 @@
 //= require_tree .
 
 $('#navbar').dropdown()
+$(".collapse").collapse()
