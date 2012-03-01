@@ -11,7 +11,7 @@ gem 'cancan'
 
 gem 'jruby-openssl'
 gem 'bootstrap-sass', '~> 2.0.0'
-gem 'formtastic'
+gem 'simple_form', '~> 2.0.1'
 gem 'inherited_resources'
 
 # Gems used only for assets and not required

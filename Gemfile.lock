@@ -99,8 +99,6 @@ GEM
       factory_girl (~> 2.6.0)
       railties (>= 3.0.0)
     ffi (1.0.11-java)
-    formtastic (2.0.2)
-      rails (~> 3.0)
     gherkin (2.9.0-java)
       json (>= 1.4.6)
     haml (3.1.4)
@@ -191,6 +189,9 @@ GEM
       ffi (~> 1.0.9)
       json_pure
       rubyzip
+    simple_form (2.0.1)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     spoon (0.0.1)
     sprockets (2.1.2)
       hike (~> 1.2)
@@ -225,7 +226,6 @@ DEPENDENCIES
   database_cleaner (>= 0.7.1)
   devise (>= 2.0.0)
   factory_girl_rails (>= 1.6.0)
-  formtastic
   inherited_resources
   jquery-rails
   jruby-openssl
@@ -234,5 +234,6 @@ DEPENDENCIES
   rails_admin!
   rspec-rails (>= 2.8.1)
   sass-rails (~> 3.2.3)
+  simple_form (~> 2.0.1)
   therubyrhino
   uglifier (>= 1.0.3)

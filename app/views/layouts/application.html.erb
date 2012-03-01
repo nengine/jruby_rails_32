@@ -52,13 +52,7 @@
       </div>
 
       <div class="container">
-        <div class="flash">
-            <% flash.each do |type, message| -%>
-                <div class="alert-message <%= type %>">
-                  <p><%= message %></p>
-                </div>
-            <% end -%>
-          </div>
+        <%= render :partial => "shared/flash_messages", :locals => {:flash => flash} %>
 
         <%= yield %>
 
