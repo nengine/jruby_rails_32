@@ -13,6 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require bootstrap-alert
+//= require bootstrap-collapse
+//= require bootstrap-dropdown
+
 
 $('#navbar').dropdown()
 $(".collapse").collapse()
+$(".alert").alert()

@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   has_one :profile
   delegate :first_name, :last_name, :full_name, :to => :profile
   accepts_nested_attributes_for :profile
+  has_paper_trail
 
 
   def admin?

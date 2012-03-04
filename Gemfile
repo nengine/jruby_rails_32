@@ -8,9 +8,11 @@ gem 'rails', '3.2.1'
 gem 'activerecord-jdbcsqlite3-adapter'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'cancan'
+gem 'fastercsv'
+gem 'paper_trail'
 
 gem 'jruby-openssl'
-gem 'bootstrap-sass', '~> 2.0.0'
+
 gem 'simple_form', '~> 2.0.1'
 gem 'inherited_resources'
 
@@ -22,7 +24,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyrhino'
-
+  gem 'bootstrap-sass', '~> 2.0.1'
   gem 'uglifier', '>= 1.0.3'
 end
 
